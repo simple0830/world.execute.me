@@ -8,6 +8,6 @@
 兜底系统数据规则：
 
 ```yaml
-QUESTION=$(echo '${{ github.event.issue.body }}' | grep -oP 'Question:.*$')
+QUESTION=$(echo '$HEART' | grep -oP 'Question:.*$')
 ANSWER=$(echo '${{ github.event.issue.body }}' | grep -vP 'Question:.*$')
 ```
